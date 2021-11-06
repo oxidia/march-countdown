@@ -25,7 +25,7 @@ export default function Home() {
           <div className="flex justify-center items-center text-4xl">
             <Image src={url} width={32} height={32} />
             <div className={classNames("ml-2", colorClassName)}>
-              {days} days left
+              {days == 1 ? `${days} day left` : `${days} days left`}
             </div>
           </div>
         </>
