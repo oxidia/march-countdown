@@ -1,0 +1,22 @@
+.countdownAnimation1 {
+  animation: countdown-animation 1s ease forwards 0.5s;
+}
+
+.countdownAnimation2 {
+  animation: countdown-animation 1s ease forwards 0.75s;
+}
+
+.countdownAnimation3 {
+  animation: countdown-animation 1s ease forwards 1s;
+}
+
+@keyframes countdown-animation {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
