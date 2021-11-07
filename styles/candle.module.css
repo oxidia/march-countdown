@@ -16,7 +16,7 @@
 }
 
 .lightCircleAnimation1 {
-  animation: light-circle-container-animation1 0.25s ease-in-out infinite 5s,
+  animation: light-circle-container-animation1 0.25s ease-in-out infinite 2.5s,
     light-circle-container-animation2 1s ease forwards 1.75s;
 }
 
