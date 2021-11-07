@@ -6,7 +6,6 @@ import Finished from "src/components/Finished";
 import Candle from "src/components/Candle";
 import classNames from "classnames";
 import getImage from "src/helpers/getImage";
-import clsx from "clsx";
 import imageStyles from "styles/image.module.css";
 import countdownStyles from "styles/countdown.module.css";
 import styles from "styles/styles.module.css";
@@ -43,7 +42,7 @@ export default function Home() {
         <>
           <time className="text-4xl md:text-5xl lg:text-8xl font-thin text-black dark:text-white">
             <div
-              className={clsx(
+              className={classNames(
                 "inline-block relative m-5 h-20 w-20 md:h-30 md:w-30 lg:h-40 lg:w-40 text-center bg-neumorphism-white dark:bg-neumorphism-black rounded-lg border-4 border-neumorphism-white-secondary dark:border-neumorphism-black-secondary shadow-neumorphism dark:shadow-darkNeumorphism opacity-0",
                 countdownStyles.countdownAnimation1
               )}
@@ -55,7 +54,7 @@ export default function Home() {
             </div>
 
             <div
-              className={clsx(
+              className={classNames(
                 "inline-block relative m-5 h-20 w-20 md:h-30 md:w-30 lg:h-40 lg:w-40 text-center bg-neumorphism-white dark:bg-neumorphism-black rounded-lg border-4 border-neumorphism-white-secondary dark:border-neumorphism-black-secondary shadow-neumorphism dark:shadow-darkNeumorphism opacity-0",
                 countdownStyles.countdownAnimation2
               )}
@@ -67,7 +66,7 @@ export default function Home() {
             </div>
 
             <div
-              className={clsx(
+              className={classNames(
                 "inline-block relative m-5 h-20 w-20 md:h-30 md:w-30 lg:h-40 lg:w-40 text-center bg-neumorphism-white dark:bg-neumorphism-black rounded-lg border-4 border-neumorphism-white-secondary dark:border-neumorphism-black-secondary shadow-neumorphism dark:shadow-darkNeumorphism opacity-0",
                 countdownStyles.countdownAnimation3
               )}
@@ -78,13 +77,13 @@ export default function Home() {
               </div>
             </div>
           </time>
-          <div className={clsx("opacity-0", styles.showAnimation500)}>
+          <div className={classNames("opacity-0", styles.showAnimation500)}>
             <p className="inline-block mt-2 py-1 px-2 bg-black dark:bg-white font-semibold text-white dark:text-black rounded-md shadow-lg">
               March countdown
             </p>
           </div>
           <div
-            className={clsx(
+            className={classNames(
               "flex mt-5 justify-center items-center text-3xl text-black dark:text-white opacity-0",
               styles.showAnimation1000
             )}
@@ -108,7 +107,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div className="bg-neumorphism-white dark:bg-neumorphism-black rounded-lg border-4 border-neumorphism-white-secondary dark:border-neumorphism-black-secondary shadow-neumorphism dark:shadow-darkNeumorphism overflow-hidden">
               <img
-                className={clsx(
+                className={classNames(
                   "h-full w-full rounded-lg object-cover",
                   imageStyles.imageAnimation
                 )}
