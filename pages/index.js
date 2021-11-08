@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Countdown, { zeroPad } from "react-countdown";
@@ -10,28 +10,12 @@ import imageStyles from "styles/image.module.css";
 import countdownStyles from "styles/countdown.module.css";
 import styles from "styles/styles.module.css";
 import LightIcon from "src/icons/light";
+import useTheme from "src/hooks/useTheme";
 
 export default function Home() {
   const endDateRef = useRef(new Date("2022-03-31"));
-  function setTheme() {
-    if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }
-  function changeTheme() {
-    if (localStorage.theme === "light") localStorage.theme = "dark";
-    else localStorage.theme = "light";
-    setTheme();
-  }
-  useEffect(() => {
-    setTheme();
-  });
+  const { toggleTheme } = useTheme();
+
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
       return <Finished />;
@@ -128,7 +112,7 @@ export default function Home() {
       </div>
       <div
         className="fixed top-5 right-5 cursor-pointer p-3 rounded-full bg-neumorphism-white dark:bg-neumorphism-black rounded-lg border-4 border-neumorphism-white-secondary dark:border-neumorphism-black-secondary shadow-neumorphism dark:shadow-darkNeumorphism text-black dark:text-white"
-        onClick={changeTheme}
+        onClick={toggleTheme}
       >
         {<LightIcon className="h-7 w-7" />}
       </div>
