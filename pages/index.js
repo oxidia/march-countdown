@@ -74,7 +74,7 @@ export default function Home() {
           >
             <Image src={url} width={32} height={32} />
             <div className={classNames("ml-2", colorClassName)}>
-              {days} days left
+              {days == 1 ? "1 day left" : `${days} days left`}
             </div>
           </div>
         </>
