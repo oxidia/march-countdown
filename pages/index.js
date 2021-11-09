@@ -112,7 +112,7 @@ export default function Home() {
         <div className="mt-10 font-bold dark:text-white">!silentCorner</div>
       </div>
       <div
-        className="fixed top-5 right-5 cursor-pointer p-3 rounded-full bg-neumorphism-white dark:bg-neumorphism-black rounded-lg border-4 border-neumorphism-white-secondary dark:border-neumorphism-black-secondary shadow-neumorphism dark:shadow-darkNeumorphism text-black dark:text-white"
+        className="fixed top-5 right-5 cursor-pointer p-3 rounded-full bg-neumorphism-white dark:bg-neumorphism-black border-4 border-neumorphism-white-secondary dark:border-neumorphism-black-secondary shadow-neumorphism dark:shadow-darkNeumorphism text-black dark:text-white"
         onClick={toggleTheme}
       >
         {<LightIcon className="h-7 w-7" />}
