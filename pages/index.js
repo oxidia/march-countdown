@@ -109,7 +109,7 @@ export default function Home() {
             <Candle value={0} />
           </div>
         </div>
-        <div className="mt-10 font-bold">!silentCorner</div>
+        <div className="mt-10 font-bold dark:text-white">!silentCorner</div>
       </div>
       <div
         className="fixed top-5 right-5 cursor-pointer p-3 rounded-full bg-neumorphism-white dark:bg-neumorphism-black rounded-lg border-4 border-neumorphism-white-secondary dark:border-neumorphism-black-secondary shadow-neumorphism dark:shadow-darkNeumorphism text-black dark:text-white"
