@@ -1,0 +1,199 @@
+.candleContainer {
+}
+
+.candleInnerContainer {
+}
+
+.fireAnimation1 {
+  animation: fire-container-animation1 0.5s ease forwards 1.25s,
+    fire-container-animation2 0.5s ease infinite 1.5s;
+}
+.fireAnimation2 {
+  animation: fire-animation 0.5s ease infinite;
+}
+.fireAnimation3 {
+  animation: fire-animation 1s ease infinite;
+}
+
+.lightCircleAnimation1 {
+  animation: light-circle-container-animation1 0.25s ease-in-out infinite 2.5s,
+    light-circle-container-animation2 1s ease forwards 1.75s;
+}
+
+.lightCircleAnimation2 {
+  animation: light-circle-animation 1s ease forwards 1.5s;
+}
+
+.lightCircleAnimation3 {
+  animation: light-circle-animation 1s ease forwards 1.25s;
+}
+
+.lightCircleAnimation4 {
+  animation: light-circle-animation 1s ease forwards 1s;
+}
+
+.lightCircleAnimation5 {
+  animation: light-circle-animation 1s ease forwards 0.75s;
+}
+
+.lightCircleAnimation6 {
+  animation: light-circle-animation 1s ease forwards 0.5s;
+}
+
+.lightCircleAnimation7 {
+  animation: light-circle-animation 1s ease forwards 0.25s;
+}
+
+.lightCircleAnimation8 {
+  animation: light-circle-animation 1s ease forwards 0s;
+}
+
+.dropAnimation1 {
+  animation: drop-animation 10s ease infinite 5s;
+}
+
+.dropAnimation2 {
+  animation: drop-animation 10s ease infinite 7s;
+}
+
+.dropAnimation3 {
+  animation: drop-animation 7s ease infinite 10s;
+}
+
+.candleAnimation {
+  animation: candle-animation 1s ease forwards 0s;
+}
+
+.showAnimation {
+  animation: show-animation 1s ease forwards 0s;
+}
+
+.showAnimation500 {
+  animation: show-animation 1s ease forwards 0.5s;
+}
+
+.showAnimation1000 {
+  animation: show-animation 1s ease forwards 1s;
+}
+
+@keyframes show-animation {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fire-container-animation2 {
+  0% {
+    transform: translateX(-50%) rotate(-45deg) scale(1);
+  }
+  25% {
+    transform: translateX(-50%) rotate(-55deg) scale(1.05);
+  }
+  50% {
+    transform: translateX(-50%) rotate(-45deg) scale(1);
+  }
+  75% {
+    transform: translateX(-50%) rotate(-40deg) scale(1.1);
+  }
+  100% {
+    transform: translateX(-50%) rotate(-45deg) scale(1);
+  }
+}
+
+@keyframes fire-container-animation1 {
+  0% {
+    transform: translateX(-50%) rotate(-45deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) rotate(-45deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fire-animation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translate(-50%, -50%) rotate(10deg) scale(0.95);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  }
+  75% {
+    transform: translate(-50%, -50%) rotate(20deg) scale(0.95);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  }
+}
+
+@keyframes light-circle-container-animation1 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.99);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes light-circle-container-animation2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes light-circle-animation {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes drop-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(5rem);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(7rem);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes candle-animation {
+  0% {
+    transform: translateY(10rem);
+  }
+  100% {
+    transform: translateY(1.25rem);
+  }
+}

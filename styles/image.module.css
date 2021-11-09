@@ -1,0 +1,12 @@
+.imageAnimation {
+  animation: image-animation 10s ease forwards;
+}
+
+@keyframes image-animation {
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
