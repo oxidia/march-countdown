@@ -13,7 +13,7 @@ import LightIcon from "src/icons/light";
 import useTheme from "src/hooks/useTheme";
 
 export default function Home() {
-  const endDateRef = useRef(new Date("2022-03-31UTC+1"));
+  const endDateRef = useRef(new Date(Date.UTC(2022, 02, 30, 23)));
   const { toggleTheme } = useTheme();
 
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
