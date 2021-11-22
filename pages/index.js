@@ -61,11 +61,6 @@ export default function Home() {
               </div>
             </div>
           </time>
-          <div className={classNames("opacity-0", styles.showAnimation500)}>
-            <p className="inline-block mt-2 py-1 px-2 bg-black dark:bg-white font-semibold text-white dark:text-black rounded-md shadow-lg">
-              March countdown
-            </p>
-          </div>
           <div
             className={classNames(
               "flex mt-5 justify-center items-center text-3xl text-black dark:text-white opacity-0",
