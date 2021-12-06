@@ -127,15 +127,9 @@ function Candle(props) {
             styles.showAnimation500
           )}
         >
-          Lorem Ipsum
-        </p>
-        <p
-          className={classNames(
-            "mt-3 invisible sm:visible sm:text-xl lg:text-3xl xl:text-5xl font-regular opacity-0",
-            styles.showAnimation1000
-          )}
-        >
-          Lorem Ipsum
+          March
+          <br />
+          Countdown
         </p>
       </div>
     </div>
